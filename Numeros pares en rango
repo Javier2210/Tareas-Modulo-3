@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+
+int main() {
+    int inicio, fin;
+    cout << "Ingrese el inicio del rango: ";
+    cin >> inicio;
+     cout << "Ingrese el fin del rango: ";
+    cin >> fin;
+    cout << "Números pares en el rango: ";
+    for (int i = inicio; i <= fin; i++) {
+        if (i % 2 == 0) {
+            cout << i << " ";
+        }
+    }
+    cout << endl;
+    return 0;
+}
