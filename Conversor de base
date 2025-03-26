@@ -1,0 +1,22 @@
+#include <iostream>
+#include <bitset>
+using namespace std;
+
+int main() {
+    int numero;
+    int opcion;
+    cout << "Ingrese un numero decimal: ";
+    cin >> numero;
+    cout << "Escoja una opcion (1: Binario, 2: Hexadecimal): ";
+    cin >> opcion;
+
+    if (opcion == 1) {
+        cout << "En binario: " << bitset<32>(numero) << endl;
+    } else if (opcion == 2) {
+        cout << "En hexadecimal: " << hex << numero << endl;
+    } else {
+        cout << "Opción inválida." << endl;
+    }
+
+    return 0;
+}
